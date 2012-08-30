@@ -1,6 +1,25 @@
+# compiled
 *.class
+
+*.o
+*.so
 
 # Package Files #
 *.jar
 *.war
 *.ear
+
+*.tar
+*.gz
+*.bz
+*.zip
+
+# personal workspace settings
+*.iws
+
+# backup
+*~
+.bak
+
+# vim
+.*.sw?
