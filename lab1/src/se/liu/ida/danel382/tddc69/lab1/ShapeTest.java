@@ -7,6 +7,7 @@ package se.liu.ida.danel382.tddc69.lab1;
  * Time: 16:16
  * To change this template use File | Settings | File Templates.
  */
+
 public class ShapeTest {
     // psvm tab
     public static void main(String[] args) {
@@ -23,7 +24,7 @@ public class ShapeTest {
         for (int i = 0; i < shapes.length; i++) {
             Shape shape = shapes[i];
             if (shape instanceof Circle) {
-                // C-w to select. C-A t to surround, choose type
+                // C-w to select and widen selection. C-A t to surround, choose type
                 System.out.println("X coordinate is " + ((Circle) shape).x);
                 System.out.println("Y coordinate is " + ((Circle) shape).y);
                 System.out.println("Radius is " + ((Circle) shape).r);
