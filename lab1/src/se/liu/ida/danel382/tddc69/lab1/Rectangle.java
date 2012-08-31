@@ -8,6 +8,7 @@ package se.liu.ida.danel382.tddc69.lab1;
  * To change this template use File | Settings | File Templates.
  */
 public class Rectangle extends Shape {
+    int x; int y; int width; int height;
     public Rectangle(int x, int y, int width, int height) {
         this.x = x;
         this.y = y;

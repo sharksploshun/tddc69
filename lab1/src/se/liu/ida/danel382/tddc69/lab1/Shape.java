@@ -17,6 +17,6 @@ public abstract class Shape {
         // can only paste with mouse
         // C-q javadoc, C-b jump to definition (new tab)
         System.out.println("A shape is constructed");
-        public abstract void draw();
-    }
+   }
+   public abstract void draw();
 }

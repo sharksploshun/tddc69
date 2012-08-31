@@ -8,6 +8,7 @@ package se.liu.ida.danel382.tddc69.lab1;
  * To change this template use File | Settings | File Templates.
  */
 public class Circle extends Shape {
+    int x; int y; int r;
     public Circle(int x, int y, int r) {
         this.x = x;
         this.y = y;
