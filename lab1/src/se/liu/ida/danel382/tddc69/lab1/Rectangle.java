@@ -6,10 +6,13 @@ package se.liu.ida.danel382.tddc69.lab1;
  * Time: 16:06
  */
 public class Rectangle extends Shape {
-    private int x; private int y; private int width; private int height;
+    // private int x; private int y;
+    private Point Point;
+    private int width; private int height;
+
     public Rectangle(int x, int y, int width, int height) {
-        this.x = x;
-        this.y = y;
+        // this.x = x; this.y = y;
+        this.Point = new Point(x, y);
         this.width = width;
         this.height = height;
         System.out.println("A Rectangle is constructed");
@@ -21,19 +24,19 @@ public class Rectangle extends Shape {
     }
 
     public int getX() {
-        return x;
+        return Point.getX();
     }
 
     public void setX(int x) {
-        this.x = x;
+        this.Point.setX(x);
     }
 
     public int getY() {
-        return y;
+        return this.Point.getY();
     }
 
     public void setY(int y) {
-        this.y = y;
+        this.Point.setY(y);
     }
 
     public int getWidth() {
