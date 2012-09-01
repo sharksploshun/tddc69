@@ -14,8 +14,7 @@ public abstract class Shape {
    public Shape() {
         // can only paste with mouse
         // C-q javadoc, C-b jump to definition (new tab)
-        System.out.println("A shape is constructed");
+        System.out.println("A Shape is constructed");
    }
-   // warning: methid is never used
    public abstract void draw();
 }
