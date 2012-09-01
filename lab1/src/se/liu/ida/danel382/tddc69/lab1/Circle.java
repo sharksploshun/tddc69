@@ -6,7 +6,7 @@ package se.liu.ida.danel382.tddc69.lab1;
  * Time: 15:45
  */
 public class Circle extends Shape {
-    int x; int y; int r;
+    private int x; private int y; private int r;
     public Circle(int x, int y, int r) {
         this.x = x;
         this.y = y;
@@ -20,4 +20,27 @@ public class Circle extends Shape {
         System.out.println("A Circle is drawn");
     }
 
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public int getR() {
+        return r;
+    }
+
+    public void setR(int r) {
+        this.r = r;
+    }
 }

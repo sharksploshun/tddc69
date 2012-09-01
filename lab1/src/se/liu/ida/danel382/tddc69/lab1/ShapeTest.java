@@ -26,16 +26,16 @@ public class ShapeTest {
             // write getters?
             if (shape instanceof Circle) {
                 // C-w to select and widen selection. C-A t to surround, choose type
-                System.out.println("X coordinate is " + ((Circle) shape).x);
-                System.out.println("Y coordinate is " + ((Circle) shape).y);
-                System.out.println("Radius is " + ((Circle) shape).r);
+                System.out.println("X coordinate is " + ((Circle) shape).getX());
+                System.out.println("Y coordinate is " + ((Circle) shape).getY());
+                System.out.println("Radius is " + ((Circle) shape).getR());
                 System.out.println("");
             }
             if (shape instanceof Rectangle) {
-                System.out.println("X coordinate is " + ((Rectangle) shape).x);
-                System.out.println("Y coordinate is " + ((Rectangle) shape).y);
-                System.out.println("Width is " + ((Rectangle) shape).width);
-                System.out.println("Height is " + ((Rectangle) shape).height);
+                System.out.println("X coordinate is " + ((Rectangle) shape).getX());
+                System.out.println("Y coordinate is " + ((Rectangle) shape).getY());
+                System.out.println("Width is " + ((Rectangle) shape).getWidth());
+                System.out.println("Height is " + ((Rectangle) shape).getHeight());
                 System.out.println("");
             }
         }
