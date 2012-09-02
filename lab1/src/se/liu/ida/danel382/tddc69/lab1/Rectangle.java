@@ -23,6 +23,28 @@ public class Rectangle extends Shape {
         System.out.println("A Rectangle is drawn");
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Rectangle rectangle = (Rectangle) o;
+
+        if (height != rectangle.height) return false;
+        if (width != rectangle.width) return false;
+        if (Point != null ? !Point.equals(rectangle.Point) : rectangle.Point != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Point != null ? Point.hashCode() : 0;
+        result = 31 * result + width;
+        result = 31 * result + height;
+        return result;
+    }
+
     public int getX() {
         return Point.getX();
     }

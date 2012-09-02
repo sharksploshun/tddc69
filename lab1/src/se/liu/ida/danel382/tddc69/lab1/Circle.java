@@ -22,6 +22,27 @@ public class Circle extends Shape {
         System.out.println("A Circle is drawn");
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Circle circle = (Circle) o;
+
+        if (r != circle.r) return false;
+        if (Point != null ? !Point.equals(circle.Point) : circle.Point != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        // this check is unnecessary?
+        int result = Point != null ? Point.hashCode() : 0;
+        result = 31 * result + r;
+        return result;
+    }
+
     public int getX() {
         return Point.getX();
     }
