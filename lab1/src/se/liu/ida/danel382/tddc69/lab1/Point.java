@@ -2,7 +2,7 @@ package se.liu.ida.danel382.tddc69.lab1;
 
 /**
  * file template
- * by: occam at: 12-09-01 11:22 PM
+ * by: danel382 at: 12-09-01 11:22 PM
  */
 public class Point {
     private int x; private int y;
@@ -11,6 +11,7 @@ public class Point {
         this.y = y;
     }
 
+    // should equals() use hashCode() ?
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
