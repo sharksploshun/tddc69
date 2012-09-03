@@ -1,10 +1,9 @@
 package se.liu.ida.danel382.tddc69.lab1;
 
 /**
- * User: danel382
- * Date: 2012-08-31
- * Time: 15:45
+ * by: danel382 at: 2012-08-31 : 15:45
  */
+
 public class Circle extends Shape {
     // private int x; private int y;
     // C-click Point to go to that class
@@ -17,7 +16,6 @@ public class Circle extends Shape {
         System.out.println("A Circle is constructed");
     }
 
-    // what is this, I don't even
     @java.lang.Override // helps the IDE (keep method names in synch?)
     public void draw() {
         System.out.println("A Circle is drawn");
@@ -38,7 +36,6 @@ public class Circle extends Shape {
 
     @Override
     public int hashCode() {
-        // this check is unnecessary?
         int result = Point != null ? Point.hashCode() : 0;
         result = 31 * result + r;
         return result;

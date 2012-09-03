@@ -1,10 +1,9 @@
 package se.liu.ida.danel382.tddc69.lab1;
 
 /**
- * User: danel382
- * Date: 2012-08-31
- * Time: 16:06
+ * by: danel382 at: 2012-08-31 : 16:06
  */
+
 public class Rectangle extends Shape {
     // private int x; private int y;
     private Point Point;

@@ -1,37 +1,17 @@
-// List is an interface and
-// ArrayList is an implementation of the List interface. ?
-// What is it? is it abstract? an array?
-// Why does the guide say List?
-// What is List for when I have ArrayList?
-
-// import both?
-// import java.util.List;
-import java.util.ArrayList;
-
 /**
- * file template
  * by: danel382 at: 2012-09-02 8:40 PM
  */
 
-/*
-// collections?
-// use generic type?
-class MyList<E> {
-    E[] elements;
-    int length;
-    E get(int index) { return elements[index]; }
-    void add(E element) { ... } // Takes a parameter of type E
-}
-*/
+import java.util.*;
 
 public class Queue {
     // List or ArrayList?
-    private ArrayList myList;
+    private List myList;
     // private int index;
 
     public Queue() {
         // this.index = 0;
-        this.myList = new ArrayList(); // ArrayList constructor?
+        this.myList = new ArrayList();
     }
 
     // Returns the number of elements
@@ -51,22 +31,19 @@ public class Queue {
         return myList.isEmpty();
     }
 
-    // size() is magic?
-    // no wrapping or casting when using this?
-    // no allocation here
+    // size() is magic. no wrapping or casting
     public void push(Object o) {
-        // it appears, myList is not an array
+        // an instance of ArrayList is not an array
         myList.add(o);
     }
 
     public Object pop() {
-        // will throw something like IndexOutOfBoundsException ?
+        // remove() will throw something if empty
         // if (myList.isEmpty()) { return null; }
-        Object o = myList.get(myList.size());
+        Object o = myList.get(0);
         // no need to null
         myList.remove(0); // at the bottom
         return o;
     }
 }
-
 // press F5 to clone the class

@@ -1,9 +1,7 @@
 package se.liu.ida.danel382.tddc69.lab1;
 
 /**
- * User: danel382
- * Date: 2012-08-31
- * Time: 16:16
+ * by: danel382 at: 2012-08-31 : 16:16
  */
 
 public class ShapeTest {
@@ -16,14 +14,14 @@ public class ShapeTest {
         shapes[2] = new Rectangle(1,2,3,4);
         shapes[3] = new Circle(12,45,67);
         shapes[4] = new Rectangle(12,34,56,78);
-        // System.out.print(""); // newline
+        // System.out.print("");
         System.out.print('\n'); //newline
 
         // itar tab or C-j for an iterate live template
         for (int i = 0; i < shapes.length; i++) {
             Shape shape = shapes[i];
             shape.draw();
-            // write getters?
+            // added getters
             if (shape instanceof Circle) {
                 // C-w to select and widen selection. C-A t to surround, choose type
                 System.out.println("X coordinate is " + ((Circle) shape).getX());

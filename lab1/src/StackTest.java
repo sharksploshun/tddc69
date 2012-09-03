@@ -1,5 +1,4 @@
 /**
- * file template
  * by: danel382 at: 2012-09-02 11:23 PM
  */
 
@@ -49,7 +48,5 @@ public class StackTest {
             System.out.print(q.pop() + " ");
             System.out.println();
         }
-        // System.out.println("IndexOutOfBoundsException?");
-        // System.out.println(q.pop());
     }
 }

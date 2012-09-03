@@ -1,5 +1,4 @@
 /**
- * file template
  * by: danel382 at: 2012-09-02 11:23 PM
  */
 
@@ -41,7 +40,7 @@ public class QueueTest {
 
         System.out.println("fill it again");
         for (int i = 0; i < b; i++) {
-            q.push(i); // no casting
+            q.push(i);
         }
 
         System.out.println("empty it one at a time");
@@ -49,8 +48,5 @@ public class QueueTest {
             System.out.print(q.pop() + " ");
             System.out.println();
         }
-
-        // System.out.println("IndexOutOfBoundsException?");
-        // System.out.println(q.pop());
     }
 }
