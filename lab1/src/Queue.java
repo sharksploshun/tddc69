@@ -13,6 +13,17 @@ import java.util.ArrayList;
  * by: danel382 at: 2012-09-02 8:40 PM
  */
 
+/*
+// collections?
+// use generic type?
+class MyList<E> {
+    E[] elements;
+    int length;
+    E get(int index) { return elements[index]; }
+    void add(E element) { ... } // Takes a parameter of type E
+}
+*/
+
 public class Queue {
     // List or ArrayList?
     private ArrayList myList;

@@ -7,6 +7,7 @@ package se.liu.ida.danel382.tddc69.lab1;
  */
 public class Circle extends Shape {
     // private int x; private int y;
+    // C-click Point to go to that class
     private Point Point;
     private int r;
     public Circle(int x, int y, int r) {
@@ -44,19 +45,19 @@ public class Circle extends Shape {
     }
 
     public int getX() {
-        return Point.getX();
+        return Point.getxCoord();
     }
 
     public void setX(int x) {
-        this.Point.setX(x);
+        this.Point.setxCoord(x);
     }
 
     public int getY() {
-        return Point.getY();
+        return Point.getyCoord();
     }
 
     public void setY(int y) {
-        this.Point.setY(y);
+        this.Point.setyCoord(y);
     }
 
     public int getR() {

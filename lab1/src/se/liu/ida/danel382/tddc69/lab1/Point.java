@@ -5,10 +5,11 @@ package se.liu.ida.danel382.tddc69.lab1;
  * by: danel382 at: 12-09-01 11:22 PM
  */
 public class Point {
-    private int x; private int y;
-    public Point(int x, int y) {
-        this.x = x;
-        this.y = y;
+    // S-F6 (refactor>rename) to rename identifier
+    private int xCoord; private int yCoord;
+    public Point(int xCoord, int yCoord) {
+        this.xCoord = xCoord;
+        this.yCoord = yCoord;
     }
 
     // should equals() use hashCode() ?
@@ -19,32 +20,32 @@ public class Point {
 
         Point point = (Point) o;
 
-        if (x != point.x) return false;
-        if (y != point.y) return false;
+        if (xCoord != point.xCoord) return false;
+        if (yCoord != point.yCoord) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        int result = x;
-        result = 31 * result + y;
+        int result = xCoord;
+        result = 31 * result + yCoord;
         return result;
     }
 
-    public int getX() {
-        return x;
+    public int getxCoord() {
+        return xCoord;
     }
 
-    public void setX(int x) {
-        this.x = x;
+    public void setxCoord(int xCoord) {
+        this.xCoord = xCoord;
     }
 
-    public int getY() {
-        return y;
+    public int getyCoord() {
+        return yCoord;
     }
 
-    public void setY(int y) {
-        this.y = y;
+    public void setyCoord(int yCoord) {
+        this.yCoord = yCoord;
     }
 }

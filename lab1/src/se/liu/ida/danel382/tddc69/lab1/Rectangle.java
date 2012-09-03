@@ -46,19 +46,19 @@ public class Rectangle extends Shape {
     }
 
     public int getX() {
-        return Point.getX();
+        return Point.getxCoord();
     }
 
     public void setX(int x) {
-        this.Point.setX(x);
+        this.Point.setxCoord(x);
     }
 
     public int getY() {
-        return this.Point.getY();
+        return this.Point.getyCoord();
     }
 
     public void setY(int y) {
-        this.Point.setY(y);
+        this.Point.setyCoord(y);
     }
 
     public int getWidth() {

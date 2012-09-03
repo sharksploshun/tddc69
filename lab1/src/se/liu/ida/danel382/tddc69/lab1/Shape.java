@@ -12,7 +12,7 @@ package se.liu.ida.danel382.tddc69.lab1;
 
 public abstract class Shape {
    public Shape() {
-        // can only paste with mouse
+        // can only paste with mouse in solaris.
         // C-q javadoc, C-b jump to definition (new tab)
         System.out.println("A Shape is constructed");
    }
